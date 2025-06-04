@@ -4,6 +4,7 @@ import { Book } from "./types";
 import BookList from "./components/BookList/BookList";
 import BookForm from "./components/BookForm/BookForm";
 import { fetchBooks, addBook, updateBook, deleteBook } from "./services/api";
+import AppHeader from "./components/AppHeader/AppHeader";
 
 function App() {
   const [books, setBooks] = useState<Book[]>([]);
@@ -47,8 +48,10 @@ function App() {
   }
 
   return (
-    <div style={{ padding: 32 }}>
-      <h1>Book Manager</h1>
+    <div>
+      <AppHeader 
+        books={books}/>
+
       {showForm ? (
         <BookForm
           initialData={editingBook}

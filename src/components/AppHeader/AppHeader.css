@@ -1,0 +1,24 @@
+.app__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    background-color: #414141;
+    color: white;
+}
+
+.app__header div {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.app__header .app__header__title {
+    margin: 0;
+}
+
+.app__header__title_claim {
+    margin: 0;
+}
